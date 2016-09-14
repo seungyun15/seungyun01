@@ -1,0 +1,38 @@
+
+
+
+<h1 align=center>t1a02-show by Fred </h1>
+
+<input id="myInput" type=text value="3"> <br><br>
+
+
+<input type=button value="Loop Add" onclick="{
+
+  myOut = document.getElementById('myArea')
+  myIn  = document.getElementById('myInput')
+  //alert(myIn.value)
+
+  for (myCount = 1; myCount <= 3; myCount++){
+
+     myOut.innerHTML += myCount + ' ' + myIn.value
+
+     if (   (myCount == 3) || (myCount == 7)  ){
+
+        myOut.innerHTML += ' Cool'
+
+     }
+     myOut.innerHTML +=  '<br>'
+  }
+
+}"> <br><br>
+
+
+
+<div id="myArea" > Your output will go here <br></div> <br>
+
+<input type=button value="Show myOut" onclick="{
+  
+   alert(myIn.value)
+
+}">
+
